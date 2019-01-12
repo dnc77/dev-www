@@ -1,0 +1,220 @@
+/* General ordering of * 
+ *
+ * Colours
+ * margins/paddings/alignment
+ * Borders and cursors
+ * Tables
+ * Fonts
+ *
+ */
+
+/* default main areas */
+body, div {
+   background-color: darkslategray;
+   color: darkkhaki;/*darkseagreen;*/
+
+   margin: 0px;
+   padding: 0px;
+
+   font-size: small;
+   font-family: verdana, tahoma, arial, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+h1, h2, h3 {
+   color: darkkhaki;
+}
+h4, h5, h6 {
+   color: darkkhaki;
+}
+
+/* default monospace fonts */
+tt {
+   margin: 0px;
+   padding: 0px;
+
+   font-size: small;
+   font-family: monaco, "Lucinda Console", monospace
+}
+
+/* default links */
+a:link {
+   color: khaki;
+}
+a:visited {
+   color: khaki; 
+}
+a:hover, a:focus {
+   color: darkkhaki;
+}
+
+/* default tables */
+table {
+   padding: 2px;
+   margin: 0px 0px 0px 5px;      /* t, r, b, l */
+
+   border: 0px solid;
+   border-color: black; /*palegreen;*/
+   border-spacing: 0;
+}
+
+/* default images */
+img {
+   padding: 0px;
+   border: 0px;
+}
+
+/* default forms */
+form {
+   display: inline;           /* form should be inline */
+
+   padding: 0px;
+   margin: 0px;
+}
+
+/* default lists */
+ul, ol li {
+   padding: 1px;
+   margin: 0px 0px 0px 5px;
+
+   list-style-type: circle;
+}
+
+ol, ol li {
+   padding: 1px;
+   margin: 0px 0px 0px 5px;
+
+   list-style-type: decimal-leading-zero;
+}
+
+table.rowtable {
+   background-color: darkslategray;
+   margin: 20px 0px 0px 0px;
+
+   border: 0px solid khaki;
+   border-collapse: collapse;
+}
+table.rowtable th {
+   background-color: khaki;
+   color: darkslategray;
+   
+/*   margin: 0px;*/
+   padding: 2px 5px 2px 2px;  /* t r b l */
+   text-align: left;
+}
+table.rowtable td {
+   background-color: darkkhaki;
+   color: slategray;
+
+   padding: 2px 5px 2px 10px;
+   text-align: right;
+}
+
+/* Round borders for rowtables */
+table.rowtable tr:first-child th {
+   background-color: darkkhaki;
+   color: darkslategray;
+
+   padding: 5px 5px 5px 2px;
+   border-radius: 5px 0px 0px 0px;
+}
+table.rowtable tr:first-child td {
+   background-color: darkkhaki;
+   color: darkslategray;
+
+   padding: 5px 5px 5px 10px;
+   border-radius: 0px 5px 0px 0px;
+}
+table.rowtable tr:first-child + tr {
+   background-color: darkkhaki;
+}
+table.rowtable tr:first-child + tr th {
+   border-radius: 0px 5px 0px 0px;
+}
+table.rowtable tr:nth-last-of-type(2) {
+   background-color: khaki;
+}
+table.rowtable tr:nth-last-of-type(2) td {
+   border-radius: 0px 0px 0px 5px;
+}
+
+table.rowtable tr:last-child th {
+   background-color: khaki;
+   
+   padding: 12px 5px 5px 2px;
+
+   border-radius: 0px 0px 0px 5px;
+}
+table.rowtable tr:last-child td {
+   background-color: khaki;
+
+   padding: 12px 5px 5px 10px;
+
+   border-radius: 0px 0px 5px 0px;
+}
+
+table.listtable {
+   background-color: darkslategray;
+   margin: 20px 0px 0px 0px;
+
+   border: 0px solid khaki;
+   border-collapse: collapse;
+}
+table.listtable tr th {
+   background-color: khaki;
+   color: darkslategray;
+   
+/*   margin: 0px;*/
+   padding: 5px 5px 5px 2px;  /* t r b l */
+   text-align: left;
+}
+table.listtable td {
+   background-color: darkkhaki;
+   color: slategray;
+
+   margin: 0px;
+   padding: 2px 5px 2px 2px;
+   text-align: left;
+   
+   border: 1px dashed khaki;
+   border-bottom-width: 0px;
+   border-collapse: collapse;
+}
+
+/* Round borders for listables */
+table.listtable tr:first-child th:first-child {
+   border-radius: 5px 0px 0px 0px;
+}
+table.listtable tr:first-child th:last-child {
+   border-radius: 0px 5px 0px 0px;
+}
+table.listtable tr:last-child td {
+   background-color: khaki;
+   
+   padding: 12px 5px 5px 10px;
+
+   border: 0px solid khaki;
+}
+table.listtable tr:last-child td:first-child {
+   border-radius: 0px 0px 0px 5px;
+}
+table.listtable tr:last-child td:last-child {
+   border-radius: 0px 0px 5px 0px;
+}
+
+input.tabledata {
+   background-color: darkkhaki;
+   color: slategray;
+
+   margin: 0px;
+   padding: 0px;
+
+   border: none;
+   cursor: pointer;
+
+   font-size: small;
+   font-family: verdana, tahoma, arial, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+}
